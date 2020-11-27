@@ -178,7 +178,7 @@ input[type=text]:focus {
 
 /* gradeimg */
 .grade_img3{
-    position: relative;
+    position: absolute;
     width: 444px;
     height: 398.5px;
     left: 911.5px;
@@ -187,16 +187,16 @@ input[type=text]:focus {
 }
 
 .grade_img2{
-    position: relative;
+    position: absolute;
     width: 556.5px;
     height: 393.5px;
     left: 376px;
     top: 1515px;
-    z-index: ;
+    z-index: 2;
 }
 
 .grade_img1{
-    position: relative;
+    position: absolute;
     width: 513.5px;
     height: 395px;
     left: 87px;
