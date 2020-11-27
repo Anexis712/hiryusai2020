@@ -54,7 +54,7 @@ const change_language = [
     ],
     [
         "<a href='auth/''> <div class='start_button'> <p class='start_button_text'><span style='font-size: .8em;vertical-align: middle;'><</span> <span style='vertical-align: middle;'>　START </span> <span style='font-size: .8em;vertical-align: middle;'>/></span></p></div></a>",
-        "<p style = 'letter-spacing: 0.1em;'>ただいまプレリース期間です。コンテンツは順次更新される予定です。</p>",
+        "<p style = 'letter-spacing: 0.1em;'>準備中のコンテンツがございます。ご了承ください。<br> 来週は生配信企画「渋Live」が開催されます。お見逃しなく！</p>",
         /*日付のところ*/"プレリリースは18日｜一般・受験生はもう少しお待ちください",  
         '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">人数制限はありません。誰でも登録可能です。</span>', 
         "委員長挨拶", 
@@ -96,7 +96,7 @@ const change_language = [
     ],
     [
         "<a href='auth_en/''> <div class='start_button'> <p class='start_button_text'><span style='font-size: .8em;vertical-align: middle;'><</span> <span style='vertical-align: middle;'>  START </span> <span style='font-size: .8em;vertical-align: middle;'>/></span></p></div></a>",
-        "<p style = 'letter-spacing: 0.1em;''>We are now in the pre-release period. Content will be continue to be updated.</p>",
+        "<p style = 'letter-spacing: 0.1em;''>We appreciate your patience as we continue updating some content. <br> Dont miss the ShibuLive streaming event, coming next week!",
         /*日付のところ*/"Pre-relese on November 18th | Public release coming soon", 
         '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">Anyone can join the experience. Register today.</span>',
         "Message From Chairman", 
