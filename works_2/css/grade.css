@@ -178,27 +178,30 @@ input[type=text]:focus {
 
 /* gradeimg */
 .grade_img3{
-    position: absolute;
+    position: relative;
     width: 444px;
     height: 398.5px;
     left: 911.5px;
-    top: 1514px;
+    top: 1515px;
+    z-index: 3;
 }
 
 .grade_img2{
-    position: absolute;
+    position: relative;
     width: 556.5px;
     height: 393.5px;
     left: 376px;
-    top: 1516px;
+    top: 1515px;
+    z-index: ;
 }
 
 .grade_img1{
-    position: absolute;
+    position: relative;
     width: 513.5px;
     height: 395px;
     left: 87px;
     top: 1515px;
+    z-index: 1;
 }
 
 /* videocard */
