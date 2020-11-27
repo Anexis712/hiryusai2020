@@ -189,7 +189,7 @@ input[type=text]:focus {
 
 .thumbnail_inner{
     width: 3000px;
-    height: 280px;
+    height: 395px;
 }
 
 .thumbnails_div{
@@ -224,4 +224,33 @@ p.more{
 }
 .sub_title {
     margin: 150px 0 10px;
+}
+
+
+/* gradeimg */
+.grade_img3{
+    position: absolute;
+    width: 444px;
+    height: 398.5px;
+    left: 911.5px;
+    top: 1515px;
+    z-index: 3;
+}
+
+.grade_img2{
+    position: absolute;
+    width: 556.5px;
+    height: 393.5px;
+    left: 376px;
+    top: 1515px;
+    z-index: 2;
+}
+
+.grade_img1{
+    position: absolute;
+    width: 513.5px;
+    height: 395px;
+    left: 87px;
+    top: 1515px;
+    z-index: 1;
 }
