@@ -96,7 +96,7 @@ const change_language = [
     ],
     [
         "<a href='auth_en/''> <div class='start_button'> <p class='start_button_text'><span style='font-size: .8em;vertical-align: middle;'><</span> <span style='vertical-align: middle;'>  START </span> <span style='font-size: .8em;vertical-align: middle;'>/></span></p></div></a>",
-        "<p style = 'letter-spacing: 0.1em;''>We appreciate your patience as we continue updating some content. <br> Dont miss the ShibuLive streaming event, coming next week!",
+        "<p style = 'letter-spacing: 0.1em;''>We appreciate your patience as we deliver more content. <br> Dont miss the ShibuLive streaming event, coming next week!",
         /*日付のところ*/"Pre-relese on November 18th | Public release coming soon", 
         '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">Anyone can join the experience. Register today.</span>',
         "Message From Chairman", 
