@@ -18,49 +18,62 @@
 		<meta property="og:image" content="https://hiryusai2020.jp/img/og_image.jpg" />
 	<!-- css -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" media="screen,print" />
-		<link href="css/preview.css" rel="stylesheet" media="screen,print" />
+		<link href="../css/preview.css" rel="stylesheet" media="screen,print" />
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<!-- jquery -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type = "text/javascript" src = "js/verify.js"></script>
-    <script>isLoggedIn()</script>
 </head>
 <body>
     <header>
-        <ul>
+		<ul>
 			<li class="underline"><a href="https://hiryusai2020.jp/top/"><p>Home</p></a></li>
 			<li class="underline"><a href="https://hiryusai2020.jp/works/"><p>Works</p></a></li>
 			<li class="underline"><a href="https://hiryusai2020.jp/members/"><p>Members</p></a></li>
 			<li class="underline"><a href="https://hiryusai2020.jp/live/"><p>Live</p></a></li>
 		</ul>
-    </header>
-    <img src="https://hiryusai2020.jp/img/favicon.png" class="logo_icon_image">
+	</header>
+	
+	<a href="https://hiryusai2020.jp/top/"><img src="https://hiryusai2020.jp/img/favicon.png" class="logo_icon_image"></a>
+	
 	<div class="select_category_section">
 		<div class="left_section select_category_child">
-			<li class="underline" onclick='auto_scroll(".search_works_input")'><h1 class="text_22 hover_shadow">クラス企画</h1></li>
+			<a href="../../works/">
+				<h1 class="text_22 hover_shadow">クラス企画</h1>
+			</a>
 		</div>
 		<div class="middle_section select_category_child">
-			<li class="underline" onclick='auto_scroll(".other")'><h1 class="text_22 hover_shadow">部活企画</h1></li>
+			<a href="../../works/#sport">
+				<h1 class="text_22 hover_shadow">部活企画</h1>
+			</a>
 		</div>
 		<div class="right_section select_category_child">
-            <li class="underline" onclick='auto_scroll("#volunteer")'><h1 class="text_22 hover_shadow">有志企画</h1></li>
+			<a href="../../works/#volunteer">
+				<h1 class="text_22 hover_shadow">有志企画</h1>
+			</a>
 		</div>
 	</div>
 	
 	<div class="search_section">
 		<div style="position: relative;">
 			<input type="text" class="search_works_input text_22" placeholder="企画を探す">
-			<img src="../img/search_icon.svg" class="search_icon">
+			<img src="../../img/search_icon.svg" class="search_icon">
 		</div>
     </div>
     <main>
-    
-<p class=works_title>こちらは現在作成中です。少々お待ちください。</p>
-
+        <a href="../../works/"> <p class="go_back_button">〈 BACK</p> </a>
+        <div class="video_section">
+            <div class="video_outer">
+                <img src="../img/video_background.jpg">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/YyH_3zDeOL4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div>
+			<iframe frameborder="0" scrolling="no" id="chatframe" class="style-scope ytd-live-chat-frame" src="https://www.youtube.com/live_chat?continuation=0ofMyANmGlBDamdLRFFvTFdYbElYek42UkdWUFREUXFKd29ZVlVOcWFtNVljamwxWldoc1dYWXhValUyWDBNMWVsVjNFZ3RaZVVoZk0zcEVaVTlNTkNBQjABggECCASIAQGgAY_lpfWnqe0C"></iframe>	
+		</div>
     </main>
     <script src="https://hiryusai2020.jp/js/common.js"></script>
-</body>
+</body> 
 </html>
