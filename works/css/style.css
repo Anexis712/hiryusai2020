@@ -2,6 +2,10 @@
 /* https://websemantics.uk/tools/responsive-font-calculator/ */
 /* 560px - 1920px */
 
+
+.no-js {
+    display: none;
+}
 /* fonts */
 @font-face {
 	font-family: 'postnobillscolomboExtrabold';
