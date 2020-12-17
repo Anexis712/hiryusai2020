@@ -1,6 +1,7 @@
 /* font-size generator */
 /* https://websemantics.uk/tools/responsive-font-calculator/ */
-/* 560px - 1920px */
+/* PC */ /* 560px - 1920px */
+
 
 /* fonts */
 @font-face {
@@ -38,6 +39,13 @@ body {
     color: #000000;
     width: 100vw;
 }
+@media screen and (max-width:670px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+        max-width: 670px;
+    }
+}
 ::selection {
     background: #000;
     color: #fff;
@@ -56,10 +64,21 @@ header {
     text-align: right;
     background-color: #ffffff;
 }
+@media screen and (max-width:670px){
+    header{
+        position: fixed;
+    }
+}
 header ul {
     display: flex;
     padding: 10px 50px 0;
     justify-content: flex-end;  /* 右寄せ */
+}
+@media screen and (max-width:670px){
+    header ul{
+        justify-content: center;
+        width: 100vw;
+    }
 }
 header li {
     color: #000000;
@@ -126,6 +145,14 @@ header li p {
     height: 70px;
     margin: 50px 90px 0;
 }
+@media screen and (max-width:670px){
+    .logo_icon_image{
+        position: relative;
+        margin-left: 14px;
+        margin-top: 80px;
+    }
+}
+
 
 /* select category section */
 .select_category_section{
@@ -149,12 +176,22 @@ header li p {
     right: -140px;
     height: 100%;
 }
+@media screen and (max-width:670px){
+    .select_category_section{
+        display: none;
+    }
+}
 
 /* search section */
 .search_section{
     margin: 170px 100px 0;
     width: calc(100vw - 200px);
     text-align: right;
+}
+@media screen and (max-width:670px){
+    .search_section{
+        margin-top: 30px;
+    }
 }
 .search_works_input{
     width: 20em;
@@ -167,6 +204,11 @@ header li p {
 .search_icon{
     height: 20px;
     margin: -5px -2em;
+}
+@media screen and (max-width:670px){
+    .search_icon{
+        display: none;
+    }
 }
 input[type=text]:focus {
     outline: none;
@@ -182,12 +224,26 @@ input[type=text]:focus {
     letter-spacing: 0.4em;
     margin: 100px 40px 200px;
 }
+@media screen and (max-width:670px){
+    .imagine_text{
+        font-size: 320%;
+        text-align: center;
+    }
+}
 
 /* black_background */
 .black_background{
     background: #000000;
     color: #ffffff;
     padding: 0 0 60vw;
+}
+@media screen and (max-width:670px){
+    .black_background{
+        position: relative;
+        margin-top: 200px;
+        z-index: 10;
+        height: 240vh;
+    }
 }
 
 
@@ -198,6 +254,11 @@ input[type=text]:focus {
 .concept_section {
     padding-top: 400px;
     text-align: center;
+}
+@media screen and (max-width:670px){
+    .concept_section{
+        padding-top: 200px;
+    }
 }
 .concept_main {
     font-size: calc(1.875rem + ((1vw - 5.6px) * 2.2059));  /* 30px - 60px */
@@ -214,6 +275,11 @@ input[type=text]:focus {
     margin: 50px 0;
     font-weight: bold;
 }
+@media screen and (max-width:670px){
+    .concept_image{
+        display: none;
+    }
+}
 .concept_text_session{
     width: 60%;
     min-width: 400px;
@@ -221,6 +287,16 @@ input[type=text]:focus {
     vertical-align: middle;
     text-align: left;
     margin: 50px 0;
+}
+@media screen and (max-width:670px){
+    .concept_text_session{
+        position: relative;
+        margin: 50px 8vw 0px;
+        overflow: hidden;
+        text-align: center;
+        display: inline;
+        padding: 0 20vw 0;
+    }
 }
 
 
@@ -259,16 +335,27 @@ input[type=text]:focus {
     margin-right: 30px;
 }
 
+
 /* photo_table_section */
 .photo_table_section{
     width: 100vw;
     text-align: right;
     margin-bottom: -200px;
 }
-
+@media screen and (max-width:670px){
+    .photo_table_section{
+        position: relative;
+        width: 80vw;
+        margin-right: 0px;
+        margin-top: -100px;
+        float: right;
+        z-index: 20;
+    }
+}
 .photo_table_image{
 
 }
+
 
 /* class_contents_preview */
 .class_contents_preview{
@@ -276,11 +363,23 @@ input[type=text]:focus {
     margin: 200px auto;
     text-align: right;
 }
+@media screen and (max-width:670px){
+    .class_contents_preview{
+        margin-top: 10vh;
+    }
+}
 
 .preview_img{
     margin: 0 auto;
     width: 100%;
     background: white;
+}
+@media screen and (max-width:670px){
+    .class_title{
+        font-size: 250%;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 /* clubs section */
@@ -294,6 +393,13 @@ input[type=text]:focus {
     color: white;
     position: relative;
 }
+@media screen and (max-width:670px){
+    .club_contents_preview{
+        position: relative;
+        z-index: 20;
+        margin-top: -60vh;
+    }
+}
 
 #contents_title_1{
     float: left;
@@ -302,6 +408,15 @@ input[type=text]:focus {
     margin: 0;
     left: 50px;
 }
+@media screen and (max-width:670px){
+    #contents_title_1{
+        float: left;
+        position: relative;
+        font-size: 200%;
+        margin-top: -475px;
+        margin-left: -20px;
+    }
+}
 
 #contents_title_2{
     float: right;
@@ -309,4 +424,13 @@ input[type=text]:focus {
     bottom: 20vw;
     margin: 0;
     right: 50px;
+}
+@media screen and (max-width:670px){
+    #contents_title_2{
+        float:right;
+        position: relative;
+        font-size: 200%;
+        margin-top: 85px;
+        margin-right: -20px;
+    }
 }
