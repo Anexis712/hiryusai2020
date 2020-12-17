@@ -37,6 +37,13 @@ body {
     color: #000000;
     width: 100vw;
 }
+@media screen and (max-width:670px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+        max-width: 670px;
+    }
+}
 ::selection {
     background: #000;
     color: #fff;
@@ -58,10 +65,21 @@ header {
     text-align: right;
     background-color: #ffffff;
 }
+@media screen and (max-width:670px){
+    header{
+        position: fixed;
+    }
+}
 header ul {
     display: flex;
     padding: 10px 50px 0;
     justify-content: flex-end;  /* 右寄せ */
+}
+@media screen and (max-width:670px){
+    header ul{
+        justify-content: center;
+        width: 100vw;
+    }
 }
 header li {
     color: #000000;
@@ -128,6 +146,13 @@ header li p {
     height: 70px;
     margin: 50px 90px 0;
 }
+@media screen and (max-width:670px){
+    .logo_icon_image{
+        position: relative;
+        margin-left: 14px;
+        margin-top: 80px;
+    }
+}
 
 /* select category section */
 .select_category_section{
@@ -137,6 +162,11 @@ header li p {
     display: flex;
     align-items: top;
     justify-content: center;
+}
+@media screen and (max-width:670px){
+    .select_category_section{
+        display: none;
+    }
 }
 .select_category_child{
     text-align: left;
@@ -158,6 +188,11 @@ header li p {
     width: calc(100vw - 200px);
     text-align: right;
 }
+@media screen and (max-width:670px){
+    .search_section{
+        margin-top: 30px;
+    }
+}
 .search_works_input{
     width: 20em;
     max-width: 80vw;
@@ -169,6 +204,11 @@ header li p {
 .search_icon{
     height: 20px;
     margin: -5px -2em;
+}
+@media screen and (max-width:670px){
+    .search_icon{
+        display: none;
+    }
 }
 input[type=text]:focus {
     outline: none;
@@ -194,6 +234,14 @@ input[type=text]:focus {
     top: 4.8vw;
     left: 4vw;
 }
+@media screen and (max-width:670px){
+    .video_iframe{
+        width: 80vw;
+        position: absolute;
+        left: -5vw;
+        margin: center;
+    }
+}
 .description_section{
     width: 32vw;
     height: 35.4vw;
@@ -202,24 +250,53 @@ input[type=text]:focus {
     margin-top: 4.8vw;
     padding: 5px 50px 10px;
 }
+@media screen and (max-width:670px){
+    .discription_section{
+        width: 100vw;
+    }
+}
 
 .class_text{
     font-size: 26px;
     font-weight: 600;
     margin: 0 0 20px;
 }
+@media screen and (max-width:670px){
+    .class_text{
+        width: 100vw;
+        margin-left: -10vw;
+    }
+}
 .works_title{
     font-size: 28px;
     font-weight: 500;
     margin: 0 0 8px;
+}
+@media screen and (max-width:670px){
+    .works_title{
+        width: 70vw;
+        margin-left: -10vw;
+        line-height: 5vh;
+    }
 }
 .works_subtitle{
     font-size: 16px;
     font-weight: normal;
     margin: 0 0 50px;
 }
+@media screen and (max-width:670px){
+    .works_subtitle{
+        width: 70vw;
+        margin-left: -10vw;
+    }
+}
 .tag_outer {
     margin: 20px 0;
+}
+@media screen and (max-width:670px){
+    .tag_outer{
+        margin-left: -10vw;
+    }
 }
 .tags{
     background: #CCCCCC;
@@ -247,8 +324,20 @@ input[type=text]:focus {
     font-weight: 500;
     margin: 50px 0 10px;
 }
+@media screen and (max-width:670px){
+    .works_description{
+        width: 70vw;
+        margin-left: -10vw;
+        padding-bottom: 10vh;
+    }
+}
 .go_back_button{
     margin: 60px 0 100px;
     font-weight: 300;
     color: #474747;
+}
+@media screen and (max-width:670px){
+    .go_back_button{
+        margin-left: -10vw;
+    }
 }
