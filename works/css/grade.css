@@ -38,6 +38,13 @@ body {
     width: 100vw;
     
 }
+@media screen and (max-width:670px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+        max-width: 670px;
+    }
+}
 ::selection {
     background: #000;
     color: #fff;
@@ -60,10 +67,22 @@ header {
     text-align: right;
     background-color: #ffffff;
 }
+@media screen and (max-width:670px){
+    header{
+        position: fixed;
+        padding: 0%;
+    }
+}
 header ul {
     display: flex;
     padding: 10px 50px 0;
     justify-content: flex-end;  /* 右寄せ */
+}
+@media screen and (max-width:670px){
+    header ul{
+        justify-content: center;
+        width: 100vw;
+    }
 }
 header li {
     color: #000000;
@@ -130,6 +149,13 @@ header li p {
     height: 70px;
     margin: 50px 90px 0;
 }
+@media screen and (max-width:670px){
+    .logo_icon_image{
+        position: relative;
+        margin-left: 14px;
+        margin-top: 80px;
+    }
+}
 
 /* select category section */
 .select_category_section{
@@ -140,6 +166,12 @@ header li p {
     align-items: top;
     justify-content: center;
 }
+@media screen and (max-width:670px){
+    .select_category_section{
+        display: none;
+    }
+}
+
 .select_category_child{
     text-align: left;
     margin: 0 140px;
@@ -160,6 +192,11 @@ header li p {
     width: calc(100vw - 200px);
     text-align: right;
 }
+@media screen and (max-width:670px){
+    .search_section{
+        margin-top: 30px;
+    }
+}
 .search_works_input{
     width: 20em;
     max-width: 80vw;
@@ -171,6 +208,11 @@ header li p {
 .search_icon{
     height: 20px;
     margin: -5px -2em;
+}
+@media screen and (max-width:670px){
+    .search_icon{
+        display: none;
+    }
 }
 input[type=text]:focus {
     outline: none;
@@ -188,9 +230,20 @@ input[type=text]:focus {
     padding: 40px;
     vertical-align: top;
 }
+@media screen and (max-width:670px){
+    .videocard{
+        width: 100vw;
+        padding: 0%;
+    }
+}
 .thumbnails_image{
     width: 100%;
     transition: .5s;
+}
+@media screen and (max-width:670px){
+    .thumbnails_image{
+        width: 80vw;
+    }
 }
 .videocard:hover .thumbnails_image{
     box-shadow: 10px 6px 0px rgba(176, 233, 175, 0.5);
@@ -206,17 +259,32 @@ input[type=text]:focus {
     font-weight: normal;
     margin: 20px 40px 8px;
 }
+@media screen and (max-width:670px){
+    .grade_text{
+        margin: 0%;
+    }
+}
 
 .list_title{
     font-size: 26px;
     font-weight: 300;
     margin: 20px 40px 40px;
 }
+@media screen and (max-width:670px){
+    .list_title{
+        margin-left: 0%;
+    }
+}
 
 .go_back_button{
     margin: 60px 0 100px;
     font-weight: 300;
     color: #474747;
+}
+@media screen and (max-width:670px){
+    .go_back_button{
+        margin-left: -10vw;
+    }
 }
 .tag_outer {
     margin: 20px 0;
