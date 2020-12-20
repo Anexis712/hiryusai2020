@@ -1,6 +1,4 @@
-/* font-size generator */
-/* https://websemantics.uk/tools/responsive-font-calculator/ */
-/* 560px - 1920px */
+
 
 /* fonts */
 @font-face {
@@ -22,7 +20,7 @@ h2 {
     font-weight: 500;
 }
 p {
-    font-size: calc(0.9375rem + ((1vw - 5.6px) * 0.3676)); /* 15px - 20px */
+    font-size: calc(0.875rem + ((1vw - 3.75px) * 0.3883)); /* 15px - 20px */
     line-height: calc(1.5 * (0.9375rem + ((1vw - 5.6px) * 0.3676)));
     letter-spacing: 0.2em;
 }
@@ -44,58 +42,7 @@ body {
 }
 
 
-/* header */
-header {
-    width: 100vw;
-    height: 50px;
-    background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    text-align: right;
-    background-color: #ffffff;
-}
-header ul {
-    display: flex;
-    padding: 10px 50px 0;
-    justify-content: flex-end;  /* 右寄せ */
-}
-header li {
-    color: #000000;
-    list-style: none;
-    line-height: 24px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: normal;
-    margin: auto 20px;
-}
-header li p {
-    font-size: 80%;
-    margin-bottom: 0px;
-}
-/* アンダーラインの作成 */
-.underline {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-}
-.underline::after {
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 0.05em;
-    background: #000000;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform .3s;
-}
-.underline:hover::after {
-    transform-origin: right top;
-    transform: scale(1, 1);
-}
+
 
 
 /* text_size */
@@ -120,64 +67,12 @@ header li p {
     text-shadow: -.2em .2em 2px rgba(255, 0, 0, 0.4), .2em -.2em 2px rgba(0, 194, 255, 0.4);
 }
 
-/* logo icon */
-.logo_icon_image{
-    width: 70px;
-    height: 70px;
-    margin: 50px 90px 0;
-}
-
-/* select category section */
-.select_category_section{
-    margin: 40px 40px 50px;
-    width: calc(100vw - 80px);
-    text-align: center;
-    display: flex;
-    align-items: top;
-    justify-content: center;
-}
-.select_category_child{
-    text-align: left;
-    margin: 0 140px;
-    position: relative;
-} 
-.left_section:after, .middle_section:after{
-    content: '';
-    border-right: 1px solid #AFAFAF;
-    position: absolute;
-    top: 0;
-    right: -140px;
-    height: 100%;
-}
-
-/* search section */
-.search_section{
-    margin: 170px 100px 0;
-    width: calc(100vw - 200px);
-    text-align: right;
-}
-.search_works_input{
-    width: 20em;
-    max-width: 80vw;
-    padding: 5px 30px 5px 5px;
-    border: 0;
-    border-bottom: 1px solid #303030;
-    color: #303030;
-}
-.search_icon{
-    height: 20px;
-    margin: -5px -2em;
-}
-input[type=text]:focus {
-    outline: none;
-}
-
 /* imagine_text */
 .imagine_text{
     font-family: 'postnobillscolomboExtrabold';
     text-shadow: -5px 10px 4px rgba(255, 0, 0, 0.4), 5px -7px 4px rgba(0, 194, 255, 0.4);
-    font-size: 100px;
-    line-height: 150px;
+    font-size: calc(2.5rem + ((1vw - 3.75px) * 7.1197));
+    line-height: calc(1.5 * (2.5rem + ((1vw - 3.75px) * 7.1197)));
     text-align: center;
     letter-spacing: 0.4em;
     margin: 100px 40px 200px;
@@ -227,8 +122,8 @@ input[type=text]:focus {
 
 /* contents select section */
 .contets_title{
-    font-size: 60px;
-    line-height: 82px;
+    font-size: calc(1.5rem + ((1vw - 3.75px) * 2.3301));
+    line-height: calc(1.5rem + ((1vw - 3.75px) * 2.3301));
     letter-spacing: 0.2em;
     font-weight: bold;
     color: white;
@@ -309,4 +204,22 @@ input[type=text]:focus {
     bottom: 20vw;
     margin: 0;
     right: 50px;
+}
+
+
+
+@media screen and (max-width: 1030px) {
+    #contents_title_1, #contents_title_2{
+        padding: 10px;
+        background: #000000b5;
+        border: 1px solid #ffffff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .concept_text_session, .concept_image{
+        width: auto;
+        min-width: auto;
+        margin: 50px 40px;
+    }
 }

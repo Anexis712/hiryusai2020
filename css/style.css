@@ -1,6 +1,4 @@
-/* font-size generator */
-/* https://websemantics.uk/tools/responsive-font-calculator/ */
-/* 560px - 1920px */
+
 
 /* fonts */
 @font-face {
@@ -22,7 +20,7 @@ h2 {
     font-weight: 500;
 }
 p {
-    font-size: calc(0.9375rem + ((1vw - 5.6px) * 0.3676)); /* 15px - 20px */
+    font-size: calc(0.875rem + ((1vw - 3.75px) * 0.3883)); /* 15px - 20px */
     line-height: calc(1.5 * (0.9375rem + ((1vw - 5.6px) * 0.3676)));
     letter-spacing: 0.2em;
 }
