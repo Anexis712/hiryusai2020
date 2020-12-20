@@ -168,6 +168,104 @@ input[type=text]:focus {
 
 
 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  /*------------------------------
+  
+    ここから下がハンバーガーメニュー
+    に関するCSS
+  
+  ------------------------------*/
+    
+  /* チェックボックスは非表示に */
+  .drawer-hidden {
+    display: none;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer-open {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+    background: white;
+    box-shadow: -3px 3px 2px rgba(255, 0, 0, 0.4), 3px -3px 2px rgba(0, 194, 255, 0.4);
+  }
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer-open span,
+  .drawer-open span:before,
+  .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 25px;
+    border-radius: 3px;
+    background: black;
+    transition: 0.5s;
+    position: absolute;
+  }
+  
+  /* 三本線のうち一番上の棒の位置調整 */
+  .drawer-open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線のうち一番下の棒の位置調整 */
+  .drawer-open span:after {
+    top: 8px;
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .drawer-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer-check:checked ~ .drawer-content {
+    left: 0;/* メニューを画面に入れる */
+  }
+
+
+
+
 @media screen and (max-width: 1030px) {
     .select_category_section{
         display: block;
@@ -189,9 +287,27 @@ input[type=text]:focus {
 }
 
 @media screen and (max-width: 600px) {
-    header{
+    .header_pc{
         display: none;
     }
+    header{
+        display: block;
+        background: transparent;
+    }
+    header ul{
+        display: block;
+        width: 80vw;
+        text-align: left;
+        margin: 10vh 10vw;
+    }
+    header li {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 50px 20px;
+    }
+
+
+
     .select_category_child{
         margin: 40px 20px;
     }
@@ -205,5 +321,11 @@ input[type=text]:focus {
     }
     .underline::after {
         display: none
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .header{
+        display: none;
     }
 }
