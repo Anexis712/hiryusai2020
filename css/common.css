@@ -195,4 +195,15 @@ input[type=text]:focus {
     .select_category_child{
         margin: 40px 20px;
     }
+
+
+    .underline {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .underline::after {
+        display: none
+    }
 }
