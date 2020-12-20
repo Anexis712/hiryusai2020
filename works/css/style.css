@@ -54,12 +54,16 @@ body {
     background: #ffffff;
     width: 300px;
     height: 168.75px;
-    margin: 7px;
+    margin: 20px 11.25px;
     transition: .5s;
     display: inline-block;
     scroll-snap-align: start;
+    vertical-align: middle;
 }
 .thumbnails_div:hover{
+    margin: 0;
+    width: 320px;
+    height: 180px;
     box-shadow: 10px 6px 0px rgba(233, 175, 217, 0.5);
 }
 .thumbnails_div img{
@@ -91,6 +95,13 @@ p.more{
     .thumbnails_div{
         width: 70vw;
         height: 39vw;
+        margin: 7px;
+    }
+    .thumbnails_div:hover{
+        margin: 7px;
+        width: 70vw;
+        height: 39vw;
+        box-shadow: 10px 6px 0px rgba(233, 175, 217, 0.5);
     }
     .thumbnail_inner{
         height: 41vw;
