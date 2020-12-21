@@ -142,7 +142,7 @@ img{border: none;}
     width: 100%;
     font-weight: bold;
     cursor: default;
-    color: #f8e825; /*メニューボタン文字カラー*/
+    color: #2f6ff8; /*メニューボタン文字カラー*/
 }
 .menu_button::before{
     vertical-align: middle;
