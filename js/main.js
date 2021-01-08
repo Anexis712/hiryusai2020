@@ -54,9 +54,9 @@ const change_language = [
     ],
     [
         "<a href='auth/''> <div class='start_button'> <p class='start_button_text'><span style='font-size: .8em;vertical-align: middle;'><</span> <span style='vertical-align: middle;'>　START </span> <span style='font-size: .8em;vertical-align: middle;'>/></span></p></div></a>",
-        "<p style = 'letter-spacing: 0.1em;'>一般の方には公開していません。今後の公開時期が決まり次第掲載します。</p>",
+        "<p style = 'letter-spacing: 0.1em;'>一般の方もご覧になれます。</p>",
         // /*日付のところ*/"プレリリースは18日｜一般・受験生はもう少しお待ちください",  
-        '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">一般の方は登録しても現在は閲覧できません。</span>', 
+        '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">一般の方もご覧になれます。</span>', 
         "委員長挨拶", 
         "委員長　中里星恋",
         `こんにちは！<br>
@@ -96,9 +96,9 @@ const change_language = [
     ],
     [
         "<a href='auth_en/''> <div class='start_button'> <p class='start_button_text'><span style='font-size: .8em;vertical-align: middle;'><</span> <span style='vertical-align: middle;'>  START </span> <span style='font-size: .8em;vertical-align: middle;'>/></span></p></div></a>",
-        "<p style = 'letter-spacing: 0.1em;''>We will update this page once a date is set for general viewing. We apologise for any inconvenience caused.</p>",
+        "<p style = 'letter-spacing: 0.1em;''>This site is now open to all visitors.</p>",
         // /*日付のところ*/"Pre-relese on November 18th | Public release coming soon", 
-        '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">Codes categorised as “others” are currently unable to view content.</span>',
+        '<span style="border-bottom: 1px solid #AFAFAF;padding-bottom: 2px;">This site is now open to all visitors.</span>',
         "Message From Chairman", 
         "Chairman of Hiryusai Festival: Seren Nakazato",
         `
