@@ -24,9 +24,6 @@ main{
 
 
 
-
-
-
 .video_section{
     width: 60vw;
     height: 42.67vw;
@@ -107,7 +104,13 @@ main{
     color: #474747;
 }
 
+.only_school_projects{
+    display: none;
+}
 
+.S1EAltVideo{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
     .video_iframe{
@@ -126,3 +129,4 @@ main{
         padding: 0;
     }
 }
+
