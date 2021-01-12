@@ -110,3 +110,10 @@ p.more{
         margin: 15px 0 50px;   
     }
 }
+
+
+
+
+.hide_projects, .only_school_projects{
+    display: none;
+}
