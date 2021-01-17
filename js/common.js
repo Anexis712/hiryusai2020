@@ -30,17 +30,17 @@ function auth_user_type (){
             }else{
                 //一般
                 console.log('一般ログイン');
-                document.documentElement.classList.remove('S1EAltVideo');
+                document.documentElement.classList.remove('AltVideo');
             }    
         }else if((parseInt(code_array[0] + code_array[1]) % 5) === 2){
             console.log('受験希望生');
             document.documentElement.classList.remove('hide_projects');
             //$('.hide_projects').removeClass();
-            document.documentElement.classList.remove('S1EAltVideo');
+            document.documentElement.classList.remove('AltVideo');
         }else{
             //一般
             console.log('一般ログイン');
-            document.documentElement.classList.remove('S1EAltVideo');
+            document.documentElement.classList.remove('AltVideo');
         }
     }else{
         alert('認証エラー。最初からやり直してください。')
