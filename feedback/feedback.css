@@ -1,0 +1,39 @@
+/*font-size:
+375px - 1920px
+https://websemantics.uk/tools/responsive-font-calculator/
+*/
+body{
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+
+.main_section {
+    width: 500px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: left;
+}
+
+.top_image {
+    margin: 200px 0 50px;
+    width: 100%;
+}
+.feedback_input {
+    width: 100%;
+}
+
+.description_text{
+    margin: 50px auto 20px;
+}
+
+.submit_button{
+    margin: 100px auto 50px;
+    width: 8em;
+    height: 3em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: white;
+    border: 0;
+    box-shadow: -3px 3px 2px rgb(255 0 0 / 40%), 3px -3px 2px rgb(0 194 255 / 40%);
+}
