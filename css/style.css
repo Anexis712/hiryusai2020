@@ -118,7 +118,8 @@ main h1 {
     bottom: 0%;
     width: 100%;
     padding: 2%;
-    background-color: rgb(173, 60, 153);
+    /*background-color: rgb(173, 60, 153);*/
+    background-color: rgb(255, 0, 0);
     color: white;
     text-align: center;
     z-index: 20;
