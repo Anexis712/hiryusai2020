@@ -1,0 +1,132 @@
+
+
+
+
+/* css */
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    width: 100vw;
+}
+::selection {
+    background: #000;
+    color: #fff;
+}
+main{
+    margin: 60px 50px 100px;
+}
+
+
+
+
+
+
+
+
+.video_section{
+    width: 60vw;
+    height: 42.67vw;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.video_section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video_iframe{
+    width: 54vw;
+    height: 35.4vw;
+    object-fit: contain;
+    position: absolute;
+    top: 4.8vw;
+    left: 4vw;
+}
+.description_section{
+    width: 32vw;
+    height: 35.4vw;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4.8vw;
+    padding: 5px 50px 10px;
+}
+
+.class_text{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+.works_title{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+.works_subtitle{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 50px;
+}
+.tag_outer {
+    margin: 20px 0;
+}
+.tags{
+    background: #CCCCCC;
+    color: #ffffff;
+    padding: 2px 10px;
+    width: 9em;
+    font-size: 14px;
+    transition: .5s;
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 5px 4px 0px rgba(175, 226, 233, 0.5);
+    cursor: pointer;
+}
+.tags:hover{
+    box-shadow: none;
+}
+.tags p{
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.works_description {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 50px 0 10px;
+}
+.go_back_button{
+    margin: 60px 0 100px;
+    font-weight: 300;
+    color: #474747;
+}
+
+.only_school_projects{
+    display: none;
+}
+
+.AltVideo{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .video_iframe{
+        width: 72vw;
+        height: 46vw;
+        top: 7vw;
+        left: 5vw;
+    }
+    .video_section{
+        width: 80vw;
+        height: 80vw;
+    }
+    .description_section{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+}
+

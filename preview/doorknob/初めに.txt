@@ -1,0 +1,95 @@
+﻿■■■初めに■■■
+
+「slick_custom」は宮幻ハツ(https://guardian.bona.jp/)が、jQueryスクリプト「slick」を使用してマンガビューアに仕立て上げたものです。
+
+--------------------------------------------------------
+     _ _      _       _
+ ___| (_) ___| | __  (_)___
+/ __| | |/ __| |/ /  | / __|
+\__ \ | | (__|   < _ | \__ \
+|___/_|_|\___|_|\_(_)/ |___/
+                   |__/
+  Author: Ken Wheeler
+ Website: http://kenwheeler.github.io
+    Docs: http://kenwheeler.github.io/slick
+    Repo: http://github.com/kenwheeler/slick
+  Issues: http://github.com/kenwheeler/slick/issues
+  
+Copyright (c) 2017 Ken Wheeler
+Licensed under the MIT license.
+https://github.com/kenwheeler/slick/blob/master/LICENSE	
+--------------------------------------------------------
+
+「slick」は無保証だけど無償で商用利用も可能なMITライセンスのスクリプトです。
+スクリプト本体はCDNで外部から読み込んでるので別途ダウンロードは不要です。
+自分のサイト内に設置できてレスポンシブでスワイプ対応のマンガビューアが欲しすぎて頑張りました！
+可能な限り最低限の編集で動くようにしています。
+スクリプトとかよく分かんないけどhtmlなら触れるって方、是非web漫画公開してください。
+自分ならもっとスタイリッシュに改造できるぜって方、是非してください。そして教えてください。
+
+
+■■■ファイル構成■■■
+
+「slick_custom_ver1」フォルダ　(名前変更推奨というか必要なのは中身だけ)
+	∟初めに.txt　(このファイルです)
+	∟comi_style.css　(名前変更＆移動不可)
+	∟comic.js　(名前変更不可＆移動不可)
+	∟help.png　(名前変更＆移動不可/自身の画像を使う場合は同名で上書きしてください)
+	∟「comic」フォルダ　(名前変更OK)　←作品の数だけコピーして使う
+		∟連番の画像ファイル　(1～開始で任意の数を用意/サンプルの4枚は削除してください)
+		∟index.html　(名前変更OK)　←主に編集する奴
+
+
+■■■使い方■■■
+
+1)「comic」フォルダにファイル名を連番にした漫画画像を入れます。
+
+2)index.htmlを開きます。
+
+3)15～19行目を編集します。
+
+例…「http://ほにゃらら/index.html」の「離島」というサイトで「太郎」が公開している「32」ページの「名無しの権兵衛の冒険」という作品の場合
+
+/**入力ここから**/
+var page = 32; //ページ数
+$("title,h1").text("名無しの権兵衛の冒険"); //タイトル名
+$("title").prepend("離島 - ");　//サイト名
+$(".copy").text("太郎");　//コピーライト
+$(".o_button").attr("onClick", "location.href='http://ほにゃらら/index.html'");　//サイトへのリンク
+/**ここまで**/
+
+4)完成！
+
+
+■■■応用■■■
+
+カスタマイズ方法は配布ページ（https://guardian.bona.jp/st/cv/）のQ&Aを参照してください。
+
+
+■■■スクリプトの権利に関して■■■
+使用しているスクリプト、「slick」(http://kenwheeler.github.io/slick/)はMITライセンスで公開されています。
+MITライセンスに関しては、こちらのページ(https://wisdommingle.com/mit-license/)が分かりやすくまとめられています。
+「slick_custom」は、slickを使用したhtmlページをWEBマンガビューアらしく表示させるためのスクリプトです。
+こちらもMITライセンスでの公開としています。
+無償でご自由にお使いいただけます。
+
+
+バグ報告はサイト(https://guardian.bona.jp/)のお問い合わせフォームかtwitter(@kyugen_hatsu)のリプライでどうぞ。
+
+
+■■■更新履歴■■■
+・2019/8/13　ver1.3公開
+iOSでもボタンのデザインを統一させるよう修正
+comi_style.css 183行目追記【-webkit-appearance: none;】
+フォント指定追記
+comi_style.css 9行目編集【font-family: Verdana, Arial, "メイリオ","ヒラギノ角ゴ Pro W3", "Osaka", "ＭＳ Ｐゴシック", sans-serif,'Font Awesome 5 Free';】
+
+・2019/6/26　ver1.2公開
+ローディング画像load.gif追加
+index.html 26行目編集【$('#last_page').before('<div><img data-lazy="' + i + '.png" src="../load.gif"></div>');】
+
+・2019/5/25　ver1.1公開
+スマホ閲覧時、操作ヘルプの×ボタンが反応しないバグ修正
+comi_style.css 294行目編集【z-index: 100;】
+
+・2019/5/23　ver1.0公開

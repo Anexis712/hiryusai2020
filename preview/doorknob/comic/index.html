@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet">
+    <link href="../comi_style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+            /**入力ここから**/
+            var page = 44; //ページ数
+            $("title,h1").text("年刊少年ファラオⅡ2020"); //タイトル名
+            $("title").prepend("HIRYUSAI ONLINE");　//サイト名
+            $(".copy").text("HIRYUSAI ONLINE 2020");　//コピーライト
+            $(".o_button").attr("onClick", "location.href='https://hiryusai2020.jp/preview/doorknob/'");　//サイトへのリンク
+            /**ここまで**/
+            
+            /**長すぎるからh1の方のタイトル改行したいって時var/コメントアウト解除して編集**/
+            //$("h1").html("サンプル<br>テキスト");
+            
+            for(var i=1; i<=page; i++){
+                $('#last_page').before('<div><img data-lazy="' + i + '.jpg" src="../load.gif"></div>'); //画像拡張子変更する場合はここを書き換え
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="slider" dir="rtl">
+        <div id="first_page"></div>
+        <div id="last_page">
+            <div class="last_page_in">
+                <h1></h1>
+                <small>Copyright &copy; <span class="copy"></span> All Rights Reserved</small>
+                <input type="button" value="最初から読む" class="button b_button"><br><br>
+                <input type="button" value="サイトへ戻る" class="button o_button">
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu_box">
+        <div class="menu_button">menu</div>
+        <div class="menu_show">    
+            <h1></h1>
+            <small>Copyright &copy; <span class="copy"></span> All Rights Reserved</small>
+            <input type="button" value="操作ヘルプ" class="button p_button">
+            <input type="button" value="全画面表示" class="button g_button sp_none">
+            <input type="button" value="最初から読む" class="button b_button">
+            <input type="button" value="サイトへ戻る" class="button o_button">
+            <div class="slick-counter"><span class="current"></span> / <span class="total"></span></div>
+            <div class="dots" dir="rtl"></div>
+            <div class="menu_button close">close</div>
+        </div>
+    </div>
+    
+    <div class="help">
+        <div class="help_in">
+            <div class="help_img"></div>
+            <p>【画面操作】</p>
+            <ul>
+                <li>&#9312;画面スライド<span>……次のページ・前のページ</span></li>
+                <li>&#9313;両端クリック<span>……次のページ・前のページ</span></li>
+                <li>&#9314;ページャークリック<span>……ページ移動</span></li>
+            </ul>
+            <!--class="sp_none"でPC以外だと非表示-->
+            <p class="sp_none">【キーボード操作】</p>
+            <ul class="sp_none">
+                <li>←キー……次のページ</li>
+                <li>→キー……前のページ</li>
+                <li>↓キー……メニュー表示</li>
+                <li>F11キー……全画面表示</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="guide">
+        <div class="slide-arrow prev-arrow"><span></span></div>
+        <div class="guide_yazirusi"><div class="icon"></div><div class="text"></div></div>
+        <div class="guide_yubi"><div class="icon"></div><div class="text"></div></div>
+        <div class="slide-arrow next-arrow"><span></span></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../comic.js"></script>
+</body>
+</html>

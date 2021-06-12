@@ -1,0 +1,225 @@
+
+
+/* fonts */
+@font-face {
+	font-family: 'postnobillscolomboExtrabold';
+	src: url('../../fonts/postnobillscolombo-extrabold.ttf');
+}
+p,a,h1,h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a {
+    color: black !important;
+    text-decoration:none;
+}
+
+h2 {
+    font-size: calc(1.25rem + ((1vw - 5.6px) * 0.7353)); /* 20px - 30px */
+    line-height: calc(1.5 * (1.25rem + ((1vw - 5.6px) * 0.7353)));
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+p {
+    font-size: calc(0.875rem + ((1vw - 3.75px) * 0.3883)); /* 15px - 20px */
+    line-height: calc(1.5 * (0.9375rem + ((1vw - 5.6px) * 0.3676)));
+    letter-spacing: 0.2em;
+}
+
+/* css */
+.no-js main {
+    display: none !important;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    width: 100vw;
+}
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+/* text_size */
+
+.text_22{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+.text_16{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 12px 0;
+}
+.hover_shadow{
+    cursor: pointer;
+    transition: .5s;
+}
+.hover_shadow:hover{
+    text-shadow: -.2em .2em 2px rgba(255, 0, 0, 0.4), .2em -.2em 2px rgba(0, 194, 255, 0.4);
+}
+
+/* imagine_text */
+.imagine_text{
+    font-family: 'postnobillscolomboExtrabold';
+    text-shadow: -5px 10px 4px rgba(255, 0, 0, 0.4), 5px -7px 4px rgba(0, 194, 255, 0.4);
+    font-size: calc(2.5rem + ((1vw - 3.75px) * 7.1197));
+    line-height: calc(1.5 * (2.5rem + ((1vw - 3.75px) * 7.1197)));
+    text-align: center;
+    letter-spacing: 0.4em;
+    margin: 100px 40px 200px;
+}
+
+/* black_background */
+.black_background{
+    background: #000000;
+    color: #ffffff;
+    padding: 0 0 60vw;
+}
+
+
+
+
+/* concept_section */
+
+.concept_section {
+    padding-top: 400px;
+    text-align: center;
+}
+.concept_main {
+    font-size: calc(1.875rem + ((1vw - 5.6px) * 2.2059));  /* 30px - 60px */
+    line-height: calc(1.5 * (1.875rem + ((1vw - 5.6px) * 2.2059)));
+    font-weight: bold;
+    margin-bottom: 110px;
+}
+
+.concept_image {
+    width: 30%;
+    min-width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px 0;
+    font-weight: bold;
+}
+.concept_text_session{
+    width: 60%;
+    min-width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin: 50px 0;
+}
+
+
+
+/* contents select section */
+.contets_title{
+    font-size: calc(1.5rem + ((1vw - 3.75px) * 2.3301));
+    line-height: calc(1.5rem + ((1vw - 3.75px) * 2.3301));
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    color: white;
+}
+#contents_title_1, #contents_title_2{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff;
+}
+/* contact_section */
+.contact_section {
+    margin-top: 0;
+    padding: 100px 10% 200px;
+    text-align: left;
+}
+.contact_title{
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.contact_border{
+    margin: 400px 0 0;
+    width: 100vw;
+}
+
+.contact_section img {
+    height: 35px;
+    margin-top: 55px;
+    margin-right: 30px;
+}
+
+/* photo_table_section */
+.photo_table_section{
+    width: 100vw;
+    text-align: right;
+    margin-bottom: -200px;
+}
+
+.photo_table_image{
+
+}
+
+/* class_contents_preview */
+.class_contents_preview{
+    width: 80vw;
+    margin: 200px auto;
+    text-align: right;
+}
+
+.preview_img{
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+}
+
+/* clubs section */
+.clubs_photo{
+    width: 100vw;
+}
+
+.club_contents_preview{
+    width: 100vw;
+    margin: -60vw auto 0;
+    color: white;
+    position: relative;
+}
+
+#contents_title_1{
+    float: left;
+    position: absolute;
+    top: 20vw;
+    margin: 0;
+    left: 50px;
+}
+
+#contents_title_2{
+    float: right;
+    position: absolute;
+    bottom: 20vw;
+    margin: 0;
+    right: 50px;
+}
+
+
+
+@media screen and (max-width: 1030px) {
+    #contents_title_1, #contents_title_2{
+        padding: 10px;
+        background: #000000b5;
+        border: 1px solid #ffffff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .concept_text_session, .concept_image{
+        width: auto;
+        min-width: auto;
+        margin: 50px 40px;
+    }
+}
